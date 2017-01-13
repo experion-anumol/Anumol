@@ -1,0 +1,36 @@
+@import "bootstrap";
+
+$textColor:saddlebrown;
+$warningColor:red;
+$bgColor:linen;
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+    background-color: $bgColor;
+}
+h1,.buttonDiv{
+    text-align: center!important;
+   color: $textColor;
+}
+
+h3{
+    text-align: left;
+    color: $textColor;
+}
+
+.myDropDown,.myTxt{
+    width: 75% !important;
+    
+}
+div{
+    padding-bottom: 10px;
+}
+
+.required{
+    color: $warningColor;
+    font-weight: normal;
+}
+span{
+    font-weight: bold;
+    color: $textColor;
+}

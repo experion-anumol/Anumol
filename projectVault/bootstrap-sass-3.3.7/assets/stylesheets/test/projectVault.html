@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="projectVault.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+	<script src="projectVault.js"></script>
+
+</head>
+
+<body>
+	<form class="myForm" action="projectVaultView.html">
+		<div class="container">
+			<div class="row smallDiv">
+				<div class="col-sm-12 col-xs-12 ">
+					<h1>Project Vault</h1>
+				</div>
+			</div>
+
+			<div class="row smallDiv">
+				<div class="col-sm-12 col-xs-12 ">
+					<h3>Project Details Entry...</h1><br/>
+				</div>
+			</div>
+
+			<div class="row bigDiv">
+				<div class="col-sm-6 col-xs-12 ">
+					<span>Project Name:</span><span class="required">*</span><br/>
+					<input type="text" maxlength="50" class="myTxt prjtName" required><br/><br/>
+					<span>Currency:</span><span class="required">*</span><br/>
+					<select class="myDropDown drpCurrency">
+						<option value="UC" data-value="USD">USD</option>
+						<option value="IR" data-value="INR">INR</option>
+						<option value="GT" data-value="GBP">GBP</option>
+						<option value="AW" data-value="AUD">AUD</option>
+					</select>
+				</div>
+
+				<div class="col-sm-6 col-xs-12 ">
+					<span>Project Code:</span><span class="required">*</span><br/>
+					<input type="text" maxlength="50" class="myTxt prjtCode" required></label><br/><br/>
+					<span>Customer:</span><span class="required">*</span><br/>
+					<select class="myDropDown drpCustomer">
+						<option value="UC" data-value="CodeObjects">CodeObjects</option>
+						<option value="IR" data-value="Regus">Regus</option>
+						<option value="GT" data-value="TRL">TRL</option>
+						<option value="AW" data-value="WorldSmart">Worldsmart</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row smallDiv">
+				<div class="col-sm-12 col-xs-12 ">
+					<span>Type:</span><span class="required">*</span>
+					<input type="radio" id="type" name="type" checked="checked" value="Fixed Fee">Fixed Fee
+					<input type="radio" id="type" name="type" value="T and M">T and M<br/><br/>
+				</div>
+			</div>
+
+			<div class="row bigDiv">
+				<div class="col-sm-6 col-xs-12 ">
+					<span>Manager:</span><span class="required">*</span><br/>
+					<input type="text" maxlength="50" class="myTxt manager" required><br/><br/>
+					<span>Project Start Date:</span><span class="required">*</span><br/>
+					<input type="text" class="myTxt startDate" id="Future" required><br/><br/>
+				</div>
+				
+				<div class="col-sm-6 col-xs-12 ">
+					<span>Project Status:</span><span class="required">*</span><br/>
+					<select class="myDropDown drpPrjtStatus">
+						<option value="YetToStart">Yet To Start</option>
+						<option  value="Past">In Progress</option>
+						<option value="Past">On Hold</option>
+						<option value="Past">Closed</option>
+					</select><br/><br/>
+					<span>Project Closure Date:</span><br/>
+					<input type="text" class="myTxt endDate"><label class="endDateReq"></label><br/><br/>
+				</div>
+			</div>
+
+			<div class="row smallDiv">
+				<div class="col-sm-12 col-xs-12 buttonDiv">
+					<input type="Reset" value="Reset" class="btn btn-primary">
+					<input type="submit" value="Submit" class="btn btn-success submitBtn">
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+
+</html>
+<!--******************************************************-->
